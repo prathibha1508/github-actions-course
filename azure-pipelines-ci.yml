@@ -19,7 +19,7 @@ steps:
   displayName: Restore Nuget Packages
   inputs:
     command: restore
-    projects: '03-app-dotnet/**/WebApp.csproj'
+    projects: '03-app-dotnet/**/packages.lock.json' #/WebApp.csproj'
 
 - task: DotNetCoreCLI@2
   displayName: Build Web App
